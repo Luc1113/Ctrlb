@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
-import colinImage from "figma:asset/59133262499e2a9ad915279215aea6d5b668fbc2.png";
-import chrisImage from "figma:asset/90cc5e3285006cb0a173c4f54b8fa7f04313710d.png";
+import colinImage from "../../assets/colin.png";
+import chrisImage from "../../assets/chris.png";
 
 export function Team() {
   return (

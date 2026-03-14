@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import blenderImage from "figma:asset/1410a625813caa20219df25c91a1c63f0b71e7e0.png";
+import blenderImage from "../../assets/blender.jpg";
 
 export function Hero() {
   return (

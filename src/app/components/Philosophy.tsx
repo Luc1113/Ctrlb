@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import eggsImage from "figma:asset/a3c98444d75bf3b612b4140615af20aa0ad2a41a.png";
+import pillsImage from "../../assets/pills.png";
 
 export function Philosophy() {
   return (
@@ -60,7 +60,7 @@ export function Philosophy() {
               className="relative"
             >
               <img 
-                src={eggsImage}
+                src={pillsImage}
                 alt="Stand out from competition"
                 className="w-full h-auto"
               />

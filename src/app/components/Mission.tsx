@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import microwaveActionImage from "figma:asset/5e704b85f40034f18758387a546416de7e8dbbe2.png";
+import microwaveActionImage from "../../assets/oven.png";
 
 export function Mission() {
   return (

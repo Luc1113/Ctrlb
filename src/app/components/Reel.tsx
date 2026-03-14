@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import metronomeImage from "figma:asset/bdc008d69824a9dd572e265d14962911fdce54f0.png";
+import metronomeImage from "asset/metronome.png";
 
 export function Reel() {
   return (
