@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import metronomeImage from "asset/metronome.png";
+import metronomeImage from "../../assets/metronome.png";
 
 export function Reel() {
   return (
