@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import blenderImage from "../../assets/blender.jpg";
+import blenderImage from "../../assets/blender.png";
 
 export function Hero() {
   return (
