@@ -4,6 +4,7 @@ import { Philosophy } from "./components/Philosophy";
 import { Mission } from "./components/Mission";
 import { Team } from "./components/Team";
 import { Reel } from "./components/Reel";
+import { Gallery } from "./components/Gallery";
 import { Contact } from "./components/Contact";
 import { useEffect } from "react";
 
@@ -26,6 +27,7 @@ export default function App() {
         <Mission />
         <Team />
         <Reel />
+        <Gallery />
         <Contact />
       </main>
     </div>

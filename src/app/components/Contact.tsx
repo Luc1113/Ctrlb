@@ -120,29 +120,6 @@ export function Contact() {
             >
               © 2026 CTRL B STUDIOS. ALL RIGHTS RESERVED.
             </p>
-            <div className="flex gap-8">
-              <a 
-                href="#" 
-                className="text-black/50 hover:text-black text-xs tracking-widest transition-colors uppercase"
-                style={{ fontFamily: 'Inter, sans-serif' }}
-              >
-                Instagram
-              </a>
-              <a 
-                href="#" 
-                className="text-black/50 hover:text-black text-xs tracking-widest transition-colors uppercase"
-                style={{ fontFamily: 'Inter, sans-serif' }}
-              >
-                Vimeo
-              </a>
-              <a 
-                href="#" 
-                className="text-black/50 hover:text-black text-xs tracking-widest transition-colors uppercase"
-                style={{ fontFamily: 'Inter, sans-serif' }}
-              >
-                LinkedIn
-              </a>
-            </div>
           </div>
         </motion.div>
       </div>
