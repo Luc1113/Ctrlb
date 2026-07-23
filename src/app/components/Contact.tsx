@@ -120,6 +120,15 @@ export function Contact() {
             >
               © 2026 CTRL B STUDIOS. ALL RIGHTS RESERVED.
             </p>
+            <a
+              href="https://youtube.com/@ctrlbstudios-t9d?si=0s5_YzPii_EamJE_"
+              target="_blank"
+              rel="noreferrer"
+              className="text-black/50 hover:text-black text-xs tracking-widest transition-colors uppercase"
+              style={{ fontFamily: 'Inter, sans-serif' }}
+            >
+              YouTube
+            </a>
           </div>
         </motion.div>
       </div>

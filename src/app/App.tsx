@@ -23,11 +23,11 @@ export default function App() {
       <Navigation />
       <main>
         <Hero />
+        <Reel />
+        <Gallery />
         <Philosophy />
         <Mission />
         <Team />
-        <Reel />
-        <Gallery />
         <Contact />
       </main>
     </div>

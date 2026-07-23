@@ -1,12 +1,15 @@
 import { motion } from "motion/react";
-import metronomeImage from "../../assets/metronome.png";
+
+const reel = {
+  title: "CTRL B Studios Reel",
+  href: "https://www.youtube.com/watch?v=7LwvHKlHGEM",
+  thumbnail: "https://img.youtube.com/vi/7LwvHKlHGEM/maxresdefault.jpg",
+};
 
 export function Reel() {
   return (
-    <section id="reel" className="relative bg-black py-20 md:py-28 overflow-hidden">
+    <section id="reel" className="relative bg-black py-16 md:py-24 overflow-hidden">
       <div className="container mx-auto px-6 md:px-12 max-w-[2000px]">
-        
-        {/* Massive Headline */}
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -23,42 +26,38 @@ export function Reel() {
           OUR REEL
         </motion.h2>
 
-        {/* Split Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          
-          {/* Left: Video Player */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="relative aspect-video bg-neutral-900 rounded-sm overflow-hidden"
-          >
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/3Uz9gbuzS4Y"
-              title="CTRL B Studios Reel"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </motion.div>
-
-          {/* Right: Metronome Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            <img 
-              src={metronomeImage}
-              alt="Precision and timing"
-              className="w-full max-w-lg mx-auto"
-            />
-          </motion.div>
-        </div>
-
+        <motion.a
+          href={reel.href}
+          target="_blank"
+          rel="noreferrer"
+          initial={{ opacity: 0, scale: 0.96 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="group relative block aspect-video overflow-hidden rounded-sm bg-neutral-900"
+          aria-label={`Watch ${reel.title} on YouTube`}
+        >
+          <img
+            src={reel.thumbnail}
+            alt={reel.title}
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+          <div className="absolute inset-0 flex items-center justify-center bg-black/25 transition-colors group-hover:bg-black/10">
+            <div className="flex size-20 items-center justify-center rounded-full border-2 border-white bg-black/45 text-white transition-colors group-hover:bg-white group-hover:text-black md:size-28">
+              <svg className="ml-1 size-10 md:size-14" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-5 md:p-8">
+            <p
+              className="text-white text-sm md:text-base uppercase tracking-widest"
+              style={{ fontFamily: "Inter, sans-serif", fontWeight: 600 }}
+            >
+              Watch on YouTube
+            </p>
+          </div>
+        </motion.a>
       </div>
     </section>
   );

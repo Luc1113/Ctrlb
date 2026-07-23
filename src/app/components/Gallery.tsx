@@ -4,20 +4,24 @@ import { useState } from "react";
 
 const videos = [
   {
-    title: "Blender PSA",
-    src: "/videos/BlenderPSA_Finalized_wLogo_V4.mp4",
-  },
-  {
-    title: "Cookies PSA",
-    src: "/videos/CookiesPSA_Finalized_wLogo_V4.mp4",
-  },
-  {
     title: "Metronome PSA",
-    src: "/videos/MetronomePSA_Finalized_wLogo_V4.mp4",
+    href: "https://www.youtube.com/watch?v=KhOW4-dASYU",
+    thumbnail: "https://img.youtube.com/vi/KhOW4-dASYU/maxresdefault.jpg",
   },
   {
     title: "Penny PSA",
-    src: "/videos/PennyPSA_Finalized_wLogo_V4.mp4",
+    href: "https://www.youtube.com/watch?v=VCRMxg_kJxU",
+    thumbnail: "https://img.youtube.com/vi/VCRMxg_kJxU/maxresdefault.jpg",
+  },
+  {
+    title: "Cookies PSA",
+    href: "https://www.youtube.com/watch?v=a3k4bsWWSTM",
+    thumbnail: "https://img.youtube.com/vi/a3k4bsWWSTM/maxresdefault.jpg",
+  },
+  {
+    title: "Sight PSA",
+    href: "https://www.youtube.com/watch?v=bXE2Jd8zhgs",
+    thumbnail: "https://img.youtube.com/vi/bXE2Jd8zhgs/maxresdefault.jpg",
   },
 ];
 
@@ -69,18 +73,27 @@ export function Gallery() {
               <ChevronLeft className="size-7" />
             </button>
 
-            <div className="relative aspect-video overflow-hidden rounded-sm bg-neutral-900">
-              <video
-                key={activeVideo.src}
-                className="h-full w-full object-cover"
-                controls
-                preload="metadata"
-                playsInline
-                title={activeVideo.title}
-              >
-                <source src={activeVideo.src} type="video/mp4" />
-              </video>
-            </div>
+            <a
+              key={activeVideo.href}
+              href={activeVideo.href}
+              target="_blank"
+              rel="noreferrer"
+              className="group relative block aspect-video overflow-hidden rounded-sm bg-neutral-900"
+              aria-label={`Watch ${activeVideo.title} on YouTube`}
+            >
+              <img
+                src={activeVideo.thumbnail}
+                alt={activeVideo.title}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              />
+              <div className="absolute inset-0 flex items-center justify-center bg-black/25 transition-colors group-hover:bg-black/10">
+                <div className="flex size-16 items-center justify-center rounded-full border-2 border-white bg-black/45 text-white transition-colors group-hover:bg-white group-hover:text-black md:size-24">
+                  <svg className="ml-1 size-8 md:size-12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+              </div>
+            </a>
 
             <button
               type="button"
@@ -130,7 +143,7 @@ export function Gallery() {
           <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
             {videos.map((video, index) => (
               <button
-                key={video.src}
+                key={video.href}
                 type="button"
                 onClick={() => setActiveIndex(index)}
                 className={`border px-4 py-3 text-left text-xs uppercase tracking-widest transition-colors ${
