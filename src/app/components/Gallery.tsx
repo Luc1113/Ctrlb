@@ -23,8 +23,27 @@ const videos = [
     href: "https://www.youtube.com/watch?v=bXE2Jd8zhgs",
     thumbnail: "https://img.youtube.com/vi/bXE2Jd8zhgs/maxresdefault.jpg",
   },
+  {
+    title:"Swap-It",
+    href: "https://www.youtube.com/watch?v=zWuBfw9IJgE",
+    thumbnail: "https://img.youtube.com/vi/zWuBfw9IJgE/maxresdefault.jpg",
+  },
+  {
+    title:"Make The Executive Desision",
+    href: "https://www.youtube.com/watch?v=afKecm5aX7U",
+    thumbnail: "https://img.youtube.com/vi/afKecm5aX7U/maxresdefault.jpg",
+  },
+  {
+    title:"Roll-It",
+    href:"https://www.youtube.com/watch?v=f4prLlDyZUA",
+    thumbnail:"https://img.youtube.com/vi/f4prLlDyZUA/maxresdefault.jpg",
+  },
+  {
+    title:"Clip It",
+    href:"https://www.youtube.com/watch?v=BkWzTLN15Hg",
+    thumbnail:"https://img.youtube.com/vi/BkWzTLN15Hg/maxresdefault.jpg",
+  }
 ];
-
 export function Gallery() {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeVideo = videos[activeIndex];

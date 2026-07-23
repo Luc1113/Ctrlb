@@ -20,7 +20,7 @@ export function Philosophy() {
             textTransform: 'uppercase'
           }}
         >
-          MEDIA<br/>DESIGNED<br/>TO STAND<br/>OUT
+          MEDIA DESIGNED<br/>TO STAND OUT
         </motion.h2>
 
         {/* Content Grid */}

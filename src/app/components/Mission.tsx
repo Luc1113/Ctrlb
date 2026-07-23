@@ -20,7 +20,7 @@ export function Mission() {
             textTransform: 'uppercase'
           }}
         >
-          OUR<br/>MISSION
+          OUR MISSION
         </motion.h2>
 
         {/* Content Grid - Asymmetric */}

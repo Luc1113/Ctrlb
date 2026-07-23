@@ -21,7 +21,7 @@ export function Team() {
             textTransform: 'uppercase'
           }}
         >
-          WHO ARE<br/>WE?
+          WHO ARE WE?
         </motion.h2>
 
         {/* Team Bio - Introduction */}

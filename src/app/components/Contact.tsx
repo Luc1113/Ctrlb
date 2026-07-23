@@ -120,6 +120,12 @@ export function Contact() {
             >
               © 2026 CTRL B STUDIOS. ALL RIGHTS RESERVED.
             </p>
+            <p
+            className="text-black/30 text-xs tracking-wider"
+            style={{ fontFamily: 'Inter, sans-serif' }}
+            align="left" 
+            >
+              Designed by <a href="mailto:lucad070103@gmail.com">Luca.</a></p>
             <a
               href="https://youtube.com/@ctrlbstudios-t9d?si=0s5_YzPii_EamJE_"
               target="_blank"
