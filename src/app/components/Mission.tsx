@@ -100,7 +100,7 @@ export function Mission() {
           >
             To help you produce
           </h3>
-          <div className="inline-block border-4 border-white px-6 py-3">
+          <div className="inline-block px-6 py-3">
             <h3 
               className="text-white leading-[0.95] tracking-tight"
               style={{ 
@@ -110,7 +110,7 @@ export function Mission() {
                 textTransform: 'uppercase'
               }}
             >
-              MEDIA THAT'S BOLD
+              MEDIA THAT'S <i>BOLD</i>
             </h3>
           </div>
         </motion.div>
