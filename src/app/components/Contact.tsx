@@ -126,7 +126,10 @@ export function Contact() {
               style={{ fontFamily: "Inter, sans-serif" }}
               align="left"
             >
-              Designed by <a href="mailto:lucad070103@gmail.com">Luca.</a>
+              Designed with ♥ by{" "}
+              <u>
+                <a href="mailto:lucad070103@gmail.com">Luca.</a>
+              </u>
             </p>
             <a
               href="https://youtube.com/@ctrlbstudios-t9d?si=0s5_YzPii_EamJE_"
