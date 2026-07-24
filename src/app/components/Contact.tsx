@@ -3,12 +3,13 @@ import { Logo } from "./Logo";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative bg-white py-20 md:py-28 overflow-hidden">
+    <section
+      id="contact"
+      className="relative bg-black py-20 md:py-28 overflow-hidden"
+    >
       <div className="container mx-auto px-6 md:px-12 max-w-[2000px]">
-        
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          
           {/* Left: Massive Brand Statement */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -16,28 +17,29 @@ export function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 
-              className="text-black leading-[0.88] tracking-tight mb-8"
-              style={{ 
-                fontFamily: 'Anton, sans-serif',
-                fontSize: 'clamp(70px, 14vw, 260px)',
+            <h2
+              className="text-white leading-[0.88] tracking-tight mb-8"
+              style={{
+                fontFamily: "Anton, sans-serif",
+                fontSize: "clamp(70px, 14vw, 260px)",
                 fontWeight: 400,
-                textTransform: 'uppercase'
+                textTransform: "uppercase",
               }}
             >
-              CTRL B<br/>STUDIOS
+              CTRL B<br />
+              STUDIOS
             </h2>
 
             <div className="space-y-3">
-              <p 
-                className="text-black text-base md:text-lg tracking-wide"
-                style={{ fontFamily: 'Inter, sans-serif', fontWeight: 300 }}
+              <p
+                className="text-white text-base md:text-lg tracking-wide"
+                style={{ fontFamily: "Inter, sans-serif", fontWeight: 300 }}
               >
                 Stand out.
               </p>
-              <p 
-                className="text-black text-base md:text-lg tracking-wide"
-                style={{ fontFamily: 'Inter, sans-serif', fontWeight: 700 }}
+              <p
+                className="text-white text-base md:text-lg tracking-wide"
+                style={{ fontFamily: "Inter, sans-serif", fontWeight: 700 }}
               >
                 Be Bold.
               </p>
@@ -54,16 +56,16 @@ export function Contact() {
           >
             {/* Email */}
             <div>
-              <p 
-                className="text-black/40 text-xs uppercase tracking-widest mb-3"
-                style={{ fontFamily: 'Inter, sans-serif', fontWeight: 500 }}
+              <p
+                className="text-white/40 text-xs uppercase tracking-widest mb-3"
+                style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
               >
                 Email:
               </p>
-              <a 
+              <a
                 href="mailto:info@ctrlbstudios.com"
-                className="text-black text-lg md:text-xl hover:opacity-60 transition-opacity"
-                style={{ fontFamily: 'Inter, sans-serif', fontWeight: 400 }}
+                className="text-white text-lg md:text-xl hover:opacity-60 transition-opacity"
+                style={{ fontFamily: "Inter, sans-serif", fontWeight: 400 }}
               >
                 info@ctrlbstudios.com
               </a>
@@ -71,25 +73,25 @@ export function Contact() {
 
             {/* Phone Numbers */}
             <div>
-              <p 
-                className="text-black/40 text-xs uppercase tracking-widest mb-3"
-                style={{ fontFamily: 'Inter, sans-serif', fontWeight: 500 }}
+              <p
+                className="text-white/40 text-xs uppercase tracking-widest mb-3"
+                style={{ fontFamily: "Inter, sans-serif", fontWeight: 500 }}
               >
                 Tel:
               </p>
               <div className="space-y-2">
                 <div>
-                  <p 
-                    className="text-black text-base md:text-lg"
-                    style={{ fontFamily: 'Inter, sans-serif', fontWeight: 300 }}
+                  <p
+                    className="text-white text-base md:text-lg"
+                    style={{ fontFamily: "Inter, sans-serif", fontWeight: 300 }}
                   >
                     Colin: <span style={{ fontWeight: 500 }}>913-485-0497</span>
                   </p>
                 </div>
                 <div>
-                  <p 
-                    className="text-black text-base md:text-lg"
-                    style={{ fontFamily: 'Inter, sans-serif', fontWeight: 300 }}
+                  <p
+                    className="text-white text-base md:text-lg"
+                    style={{ fontFamily: "Inter, sans-serif", fontWeight: 300 }}
                   >
                     Chris: <span style={{ fontWeight: 500 }}>917-547-6642</span>
                   </p>
@@ -98,11 +100,10 @@ export function Contact() {
             </div>
 
             {/* Logo */}
-            <div className="pt-8 border-t border-black/10">
+            <div className="pt-8 border-t border-white/10">
               <Logo />
             </div>
           </motion.div>
-
         </div>
 
         {/* Footer */}
@@ -111,27 +112,28 @@ export function Contact() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-20 pt-10 border-t border-black/10"
+          className="mt-20 pt-10 border-t border-white/10"
         >
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-            <p 
-              className="text-black/30 text-xs tracking-wider"
-              style={{ fontFamily: 'Inter, sans-serif' }}
+            <p
+              className="text-white/30 text-xs tracking-wider"
+              style={{ fontFamily: "Inter, sans-serif" }}
             >
               © 2026 CTRL B STUDIOS. ALL RIGHTS RESERVED.
             </p>
             <p
-            className="text-black/30 text-xs tracking-wider"
-            style={{ fontFamily: 'Inter, sans-serif' }}
-            align="left" 
+              className="text-white/30 text-xs tracking-wider"
+              style={{ fontFamily: "Inter, sans-serif" }}
+              align="left"
             >
-              Designed by <a href="mailto:lucad070103@gmail.com">Luca.</a></p>
+              Designed by <a href="mailto:lucad070103@gmail.com">Luca.</a>
+            </p>
             <a
               href="https://youtube.com/@ctrlbstudios-t9d?si=0s5_YzPii_EamJE_"
               target="_blank"
               rel="noreferrer"
-              className="text-black/50 hover:text-black text-xs tracking-widest transition-colors uppercase"
-              style={{ fontFamily: 'Inter, sans-serif' }}
+              className="text-white/50 hover:text-white text-xs tracking-widest transition-colors uppercase"
+              style={{ fontFamily: "Inter, sans-serif" }}
             >
               YouTube
             </a>

@@ -8,19 +8,22 @@ const reel = {
 
 export function Reel() {
   return (
-    <section id="reel" className="relative bg-black py-16 md:py-24 overflow-hidden">
+    <section
+      id="reel"
+      className="relative bg-white py-16 md:py-24 overflow-hidden"
+    >
       <div className="container mx-auto px-6 md:px-12 max-w-[2000px]">
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-white leading-[0.85] tracking-tight mb-12 md:mb-16"
-          style={{ 
-            fontFamily: 'Anton, sans-serif',
-            fontSize: 'clamp(80px, 16vw, 280px)',
+          className="text-black leading-[0.85] tracking-tight mb-12 md:mb-16"
+          style={{
+            fontFamily: "Anton, sans-serif",
+            fontSize: "clamp(80px, 16vw, 280px)",
             fontWeight: 400,
-            textTransform: 'uppercase'
+            textTransform: "uppercase",
           }}
         >
           OUR REEL
@@ -44,7 +47,12 @@ export function Reel() {
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/25 transition-colors group-hover:bg-black/10">
             <div className="flex size-20 items-center justify-center rounded-full border-2 border-white bg-black/45 text-white transition-colors group-hover:bg-white group-hover:text-black md:size-28">
-              <svg className="ml-1 size-10 md:size-14" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg
+                className="ml-1 size-10 md:size-14"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
                 <path d="M8 5v14l11-7z" />
               </svg>
             </div>
